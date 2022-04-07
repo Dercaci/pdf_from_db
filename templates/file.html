@@ -1,0 +1,23 @@
+<h2>Table with the information for QDFC</h2>
+
+<table border="1" align="left" width="100%">
+<thead>
+    <tr>
+        <th width="20%">Company name</th>
+        <th width="20%">Number of cars</th>
+        <th width="20%">Date of the latest payment</th>
+        <th width="20%">Amount of the latest payment</th>
+        <th width="20%">Average price of the cars</th>
+    </tr>
+{% for n in name %}    
+</thead>
+<tbody>
+  <tr>
+    {% for i in n%}
+    <td>{{ i }}</td>
+    {% endfor %}
+  </tr>
+</tbody>
+{% endfor %}
+
+</table>
